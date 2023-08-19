@@ -1,7 +1,7 @@
 import {Image, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import Ball from './src/ball';
-import Deck from './src/Deck';
+import Ball from './src1/ball';
+import Deck from './src1/Deck';
 import {Button, Card} from 'react-native-elements';
 
 const DATA = [
