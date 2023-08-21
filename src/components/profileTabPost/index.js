@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {View, ScrollView} from 'react-native';
 import React from 'react';
 import styles from './styles';
 import {Image} from 'react-native';
@@ -8,7 +8,6 @@ const ProfileTabPost = () => {
     <ScrollView
       style={styles.profileTabPostContainer}
       contentContainerStyle={{flexGrow: 1}}>
-      {/* <Text>ProfileTabPost</Text> */}
       <View style={styles.imageContainer}>
         <Image
           style={styles.image}
