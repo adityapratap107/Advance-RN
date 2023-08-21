@@ -7,23 +7,17 @@ import {
 } from '../../assets/styles/scaling';
 
 const styles = StyleSheet.create({
-  tab: {
-    backgroundColor: colors.colorBlue,
-    height: verticalScale(50),
+  badge: {
+    backgroundColor: colors.colorGreen,
+    height: verticalScale(22),
     // width: horizontalScale(134),
     borderRadius: 50,
     justifyContent: 'center',
   },
-  inactiveTab: {
-    backgroundColor: colors.colorInactiveWhite,
-  },
-  inactiveTabTitle: {
-    color: colors.colorGrey1,
-  },
-  tabTitle: {
+  badgeTitle: {
     color: colors.white,
-    fontSize: scaleFontSize(14),
-    fontWeight: '500',
+    fontSize: scaleFontSize(10),
+    fontWeight: '600',
     fontFamily: 'Inter-Regular',
     textAlign: 'center',
   },
