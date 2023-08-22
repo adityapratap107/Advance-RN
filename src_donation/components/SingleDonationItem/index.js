@@ -1,4 +1,4 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Badge from '../Badge';
@@ -8,7 +8,7 @@ import {colors} from '../../assets/colors';
 
 const SingleDonationItem = props => {
   return (
-    <View>
+    <Pressable onPress={() => props.onPress(props.donationItemId)}>
       <View>
         <View style={styles.badgeView}>
           <Badge title={props.badgeTitle} />
@@ -24,6 +24,7 @@ const SingleDonationItem = props => {
           title={props.donationTitle}
           type={3}
           color={colors.colorBlack3}
+          numberOfLines={1}
         />
         <View style={styles.price}>
           <Header
@@ -33,14 +34,20 @@ const SingleDonationItem = props => {
           />
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 
+SingleDonationItem.defaultProps = {
+  onPress: () => {},
+}
+
 SingleDonationItem.propTypes = {
+  donationItemId: PropTypes.number.isRequired,
   uri: PropTypes.string.isRequired,
   badgeTitle: PropTypes.string.isRequired,
   donationTitle: PropTypes.string.isRequired,
   price: PropTypes.number.isRequired,
+  onPress: PropTypes.func,
 };
 export default SingleDonationItem;

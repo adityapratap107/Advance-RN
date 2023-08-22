@@ -9,7 +9,7 @@ import {
 const styles = StyleSheet.create({
   image: {
     height: verticalScale(170),
-    width: horizontalScale(155),
+    width: horizontalScale(140),
     borderRadius: 20,
   },
   badgeView: {
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   donationInformation: {
-    marginTop: verticalScale(16)
+    marginTop: verticalScale(16),
   },
   price: {
     marginTop: verticalScale(5),

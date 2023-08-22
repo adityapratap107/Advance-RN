@@ -24,7 +24,7 @@ const Search = props => {
       </View>
       <TextInput
         ref={textinputRef}
-        placeholder="Search"
+        placeholder={props.placeholder}
         style={styles.searchInput}
         value={search}
         onChangeText={value => handleSearch(value)}
@@ -35,10 +35,12 @@ const Search = props => {
 
 Search.defaultProps = {
   onSearch: () => {},
+  placeholder: 'Search',
 };
 
 Search.propTypes = {
   onSearch: PropTypes.func,
+  placeholder: PropTypes.string,
 };
 
 export default Search;

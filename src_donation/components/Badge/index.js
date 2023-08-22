@@ -16,7 +16,7 @@ const Badge = props => {
       <Text
         ref={textRef}
         onTextLayout={event => {
-          console.log(event.nativeEvent.lines[0].width);
+          // console.log(event.nativeEvent.lines[0].width);
           setWidth(event.nativeEvent.lines[0].width);
         }}
         style={[styles.badgeTitle]}>

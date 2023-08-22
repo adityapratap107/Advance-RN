@@ -9,9 +9,11 @@ export const colors = {
   colorWhite2: '#eff2f6',
   colorGrey2: '#E9EFF1',
   colorGrey3: '#686C7A',
+  colorGrey4: '#636776',
   colorBlue: '#2979F2',
   colorBlue2: '#25C0FF',
   colorBlue3: '#156CF7',
   colorInactiveWhite: '#F3F5F9',
   colorGreen: '#145855',
+  colorWhite3: '#fafafa'
 };
