@@ -25,9 +25,10 @@ import {
   updateSelectedDonationId,
 } from '../../redux/reducers/Donations';
 import {Routes} from '../../navigation/Routes';
+import {logout} from '../../api/User';
 const Home = ({navigation}) => {
   const user = useSelector(state => state.user);
-  // console.log(user);
+  console.log('USER_HOME', user);
 
   const categoriesData = useSelector(state => state.categories);
   // console.log(categoriesData);
@@ -81,17 +82,27 @@ const Home = ({navigation}) => {
           <View>
             <Text>Hello, </Text>
             <View style={styles.userName}>
-              <Header
+              {/* <Header
                 title={user.firstName + ' ' + user.lastName[0] + '.👋'}
                 color={colors.black}
-              />
+              /> */}
+              <Header title={user.displayName + " 👋'"} color={colors.black} />
             </View>
           </View>
-          <Image
-            source={{uri: user.profileImage}}
-            style={styles.profileImage}
-            resizeMode={'contain'}
-          />
+          <View>
+            <Image
+              source={{uri: user.profileImage}}
+              style={styles.profileImage}
+              resizeMode={'contain'}
+            />
+            <Pressable
+              onPress={async () => {
+                dispatch(resetToInitialState());
+                await logout();
+              }}>
+              <Header type={3} title={'Logout'} color={colors.colorBlue} />
+            </Pressable>
+          </View>
         </View>
 
         {/* <Pressable onPress={() => dispatch(updateFirstName({firstName: 'A'}))}>

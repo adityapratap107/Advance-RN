@@ -31,7 +31,7 @@ Header.default = {
   type: 1,
   color: '#000000',
 };
-Header.PropTypes = {
+Header.propTypes = {
   title: PropTypes.string,
   type: PropTypes.number,
   color: PropTypes.string,

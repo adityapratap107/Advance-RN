@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010513199515",
+    "project_id": "advance-rn",
+    "storage_bucket": "advance-rn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010513199515:android:dd4e6eb88b2a1e1d34e13e",
+        "android_client_info": {
+          "package_name": "com.advancern"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010513199515-7r6rv4lpc23h07nshoj9dbrql654kqio.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvoknV1eHYce2dhrm7xm4lb-xiX45HA8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010513199515-7r6rv4lpc23h07nshoj9dbrql654kqio.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -8,7 +8,7 @@ const Button = props => {
     <Pressable
       onPress={() => props.onPress()}
       disabled={props.isDisabled}
-      style={[styles.button, props.isDisabled && styles.disabledButton]}>
+      style={[styles.button, props.isDisabled && styles.disabledButton, props.buttonContainerStyle]}>
       <Text style={styles.buttonText}>{props.title}</Text>
     </Pressable>
   );
@@ -17,10 +17,11 @@ Button.default = {
   isDisabled: false,
   onPress: () => {},
 };
-Button.PropTypes = {
+Button.propTypes = {
   title: PropTypes.string.isRequired,
   isDisabled: PropTypes.bool,
   onPress: PropTypes.func,
+  buttonContainerStyle: PropTypes.object,
 };
 
 export default Button;

@@ -2,6 +2,7 @@ export const colors = {
   black: '#000000',
   blackTwo: '#022150',
   colorBlack3: '#0A043C',
+  colorBlack4: '#022150',
   colorWhite: '#F9FAFB',
   white: '#fff',
   pink: '#F35BAC',
@@ -10,10 +11,12 @@ export const colors = {
   colorGrey2: '#E9EFF1',
   colorGrey3: '#686C7A',
   colorGrey4: '#636776',
+  colorGrey5: '#36455A',
   colorBlue: '#2979F2',
   colorBlue2: '#25C0FF',
   colorBlue3: '#156CF7',
   colorInactiveWhite: '#F3F5F9',
   colorGreen: '#145855',
-  colorWhite3: '#fafafa'
+  colorWhite3: '#fafafa',
+  colorLineGrey: 'rgba(167, 167, 167, 0.50)',
 };

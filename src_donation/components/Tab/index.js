@@ -32,7 +32,7 @@ Tab.default = {
   isInActive: false,
   onPress: () => {},
 };
-Tab.PropTypes = {
+Tab.propTypes = {
   tabId: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
   isInActive: PropTypes.bool,

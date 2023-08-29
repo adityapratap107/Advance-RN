@@ -40,7 +40,7 @@ const SingleDonationItem = props => {
 
 SingleDonationItem.defaultProps = {
   onPress: () => {},
-}
+};
 
 SingleDonationItem.propTypes = {
   donationItemId: PropTypes.number.isRequired,
