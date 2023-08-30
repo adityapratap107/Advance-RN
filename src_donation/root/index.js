@@ -31,7 +31,7 @@ const RootDonationApp = () => {
       subscription.remove();
     };
   }, []);
-  
+
   return (
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={null}>
