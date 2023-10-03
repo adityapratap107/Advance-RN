@@ -1,31 +1,26 @@
+import {useEffect, useState} from 'react';
 import {
-  ActivityIndicator,
   FlatList,
   Image,
   Pressable,
   SafeAreaView,
   ScrollView,
-  StyleSheet,
   Text,
   View,
 } from 'react-native';
-import React, {useEffect, useState} from 'react';
-import styles from './styles';
+import {useDispatch, useSelector} from 'react-redux';
+import {logout} from '../../api/User';
+import {colors} from '../../assets/colors';
 import globalStyle from '../../assets/styles/globalStyle';
 import Header from '../../components/Header';
-import Tab from '../../components/Tab';
 import Search from '../../components/Search';
 import SingleDonationItem from '../../components/SingleDonationItem';
-import {colors} from '../../assets/colors';
-import {useDispatch, useSelector} from 'react-redux';
-import {resetToInitialState, updateFirstName} from '../../redux/reducers/User';
-import {updateSelectedCategoryId} from '../../redux/reducers/Categories';
-import {
-  resetDonations,
-  updateSelectedDonationId,
-} from '../../redux/reducers/Donations';
+import Tab from '../../components/Tab';
 import {Routes} from '../../navigation/Routes';
-import {logout} from '../../api/User';
+import {updateSelectedCategoryId} from '../../redux/reducers/Categories';
+import {updateSelectedDonationId} from '../../redux/reducers/Donations';
+import {resetToInitialState} from '../../redux/reducers/User';
+import styles from './styles';
 const Home = ({navigation}) => {
   const user = useSelector(state => state.user);
   console.log('USER_HOME', user);

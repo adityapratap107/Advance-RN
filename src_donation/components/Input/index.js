@@ -1,6 +1,6 @@
-import {StyleSheet, Text, TextInput, View} from 'react-native';
-import React, {useState} from 'react';
 import PropTypes from 'prop-types';
+import {useState} from 'react';
+import {Text, TextInput, View} from 'react-native';
 import styles from './styles';
 
 const Input = props => {

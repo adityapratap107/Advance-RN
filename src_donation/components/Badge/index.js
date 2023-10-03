@@ -1,8 +1,8 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
-import React, {useRef, useState} from 'react';
 import PropTypes from 'prop-types';
-import styles from './styles';
+import {useRef, useState} from 'react';
+import {Text, View} from 'react-native';
 import {horizontalScale} from '../../assets/styles/scaling';
+import styles from './styles';
 
 const Badge = props => {
   const [width, setWidth] = useState(0);

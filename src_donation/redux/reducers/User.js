@@ -28,5 +28,6 @@ export const User = createSlice({
   },
 });
 
-export const {updateFirstName, resetToInitialState, logIn, updateToken} = User.actions;
+export const {updateFirstName, resetToInitialState, logIn, updateToken} =
+  User.actions;
 export default User.reducer;

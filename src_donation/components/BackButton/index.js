@@ -1,8 +1,7 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
-import PropTypes from 'prop-types';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faArrowLeft} from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
+import PropTypes from 'prop-types';
+import {Pressable} from 'react-native';
 import styles from './styles';
 
 const BackButton = props => {

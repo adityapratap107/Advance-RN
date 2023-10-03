@@ -20,17 +20,7 @@ const styles = StyleSheet.create({
     height: 120,
     width: 120,
   },
-  userNameContainer: {
-    flex: 1,
-    alignItems: 'center',
-    marginTop: verticalScale(20),
-  },
-  userName: {
-    fontSize: scaleFontSize(20),
-    fontWeight: '600',
-    fontFamily: 'Inter-Regular',
-    color: colors.black,
-  },
+
   profileStatsContainer: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -59,6 +49,21 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: colors.colorGrey2,
     marginTop: verticalScale(50),
+  },
+  buttonView: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+    marginVertical: verticalScale(10),
+  },
+  incBtn: {
+    height: 30,
+    width: horizontalScale(100),
+    borderWidth: 1,
+    borderColor: colors.colorGrey1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 8,
   },
 });
 

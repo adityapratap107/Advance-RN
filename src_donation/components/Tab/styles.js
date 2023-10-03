@@ -1,10 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {colors} from '../../assets/colors';
-import {
-  horizontalScale,
-  scaleFontSize,
-  verticalScale,
-} from '../../assets/styles/scaling';
+import {scaleFontSize, verticalScale} from '../../assets/styles/scaling';
 
 const styles = StyleSheet.create({
   tab: {

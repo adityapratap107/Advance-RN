@@ -1,20 +1,12 @@
-import {
-  Image,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import React from 'react';
+import {Image, SafeAreaView, ScrollView, Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
+import {colors} from '../../assets/colors';
 import globalStyle from '../../assets/styles/globalStyle';
 import BackButton from '../../components/BackButton';
-import styles from './styles';
 import Badge from '../../components/Badge';
-import Header from '../../components/Header';
-import {colors} from '../../assets/colors';
 import Button from '../../components/Button';
+import Header from '../../components/Header';
+import styles from './styles';
 
 const SingleDonationItem = ({navigation, route}) => {
   const donationItemInformation = useSelector(

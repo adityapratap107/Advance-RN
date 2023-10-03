@@ -1,10 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {colors} from '../../assets/colors';
-import {
-  horizontalScale,
-  scaleFontSize,
-  verticalScale,
-} from '../../assets/styles/scaling';
+import {horizontalScale, verticalScale} from '../../assets/styles/scaling';
 
 const styles = StyleSheet.create({
   image: {
@@ -23,7 +18,7 @@ const styles = StyleSheet.create({
   },
   price: {
     marginTop: verticalScale(5),
-  }
+  },
 });
 
 export default styles;

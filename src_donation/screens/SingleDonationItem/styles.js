@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
   button: {
     marginBottom: verticalScale(20),
     marginHorizontal: horizontalScale(12),
-  }
+  },
 });
 
 export default styles;

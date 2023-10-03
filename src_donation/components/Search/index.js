@@ -1,10 +1,10 @@
-import {Pressable, StyleSheet, Text, TextInput, View} from 'react-native';
-import React, {useRef, useState} from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
-import styles from './styles';
-import {colors} from '../../assets/colors';
+import {FontAwesomeIcon} from '@fortawesome/react-native-fontawesome';
 import PropTypes from 'prop-types';
+import {useRef, useState} from 'react';
+import {Pressable, TextInput, View} from 'react-native';
+import {colors} from '../../assets/colors';
+import styles from './styles';
 
 const Search = props => {
   const textinputRef = useRef(null);

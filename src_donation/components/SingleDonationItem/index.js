@@ -1,10 +1,9 @@
-import {Image, Pressable, StyleSheet, Text, View} from 'react-native';
-import React from 'react';
 import PropTypes from 'prop-types';
+import {Image, Pressable, View} from 'react-native';
+import {colors} from '../../assets/colors';
 import Badge from '../Badge';
 import Header from '../Header';
 import styles from './styles';
-import {colors} from '../../assets/colors';
 
 const SingleDonationItem = props => {
   return (

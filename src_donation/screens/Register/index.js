@@ -1,19 +1,12 @@
-import {
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import React, {useState} from 'react';
+import {useState} from 'react';
+import {SafeAreaView, ScrollView, Text, View} from 'react-native';
+import {createUser} from '../../api/User';
+import {colors} from '../../assets/colors';
 import globalStyle from '../../assets/styles/globalStyle';
+import Button from '../../components/Button';
+import Header from '../../components/Header';
 import Input from '../../components/Input';
 import styles from './styles';
-import Header from '../../components/Header';
-import {colors} from '../../assets/colors';
-import Button from '../../components/Button';
-import {createUser} from '../../api/User';
 
 const Register = ({navigation}) => {
   const [email, setEmail] = useState('');

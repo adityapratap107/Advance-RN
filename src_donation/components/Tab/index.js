@@ -1,8 +1,8 @@
-import {Pressable, StyleSheet, Text, View} from 'react-native';
-import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
+import {useRef, useState} from 'react';
+import {Pressable, Text} from 'react-native';
+import {horizontalScale} from '../../assets/styles/scaling';
 import styles from './styles';
-import { horizontalScale } from '../../assets/styles/scaling';
 
 const Tab = props => {
   const [width, setWidth] = useState(0);

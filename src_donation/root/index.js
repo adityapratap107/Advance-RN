@@ -1,13 +1,12 @@
 import {NavigationContainer} from '@react-navigation/native';
-import React, {useEffect, useRef} from 'react';
+import {useEffect, useRef} from 'react';
 import {AppState} from 'react-native';
+import BootSplash from 'react-native-bootsplash';
 import {Provider} from 'react-redux';
 import {PersistGate} from 'redux-persist/integration/react';
 import {checkToken} from '../api/User';
-import MainNavigation from '../navigation/MainNavigation';
 import RootNavigation from '../navigation/RootNavigation';
 import store, {persistor} from '../redux/store';
-import BootSplash from 'react-native-bootsplash';
 
 const RootDonationApp = () => {
   const appState = useRef(AppState.currentState);

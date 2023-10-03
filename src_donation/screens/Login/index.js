@@ -1,11 +1,4 @@
-import {
-  Pressable,
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {Pressable, SafeAreaView, ScrollView, Text, View} from 'react-native';
 import React, {useState} from 'react';
 import globalStyle from '../../assets/styles/globalStyle';
 import Input from '../../components/Input';
@@ -15,8 +8,8 @@ import {colors} from '../../assets/colors';
 import Button from '../../components/Button';
 import {Routes} from '../../navigation/Routes';
 import {loginUser} from '../../api/User';
-import { useDispatch } from 'react-redux';
-import { logIn, resetToInitialState } from '../../redux/reducers/User';
+import {useDispatch} from 'react-redux';
+import {logIn} from '../../redux/reducers/User';
 
 const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
