@@ -18,13 +18,22 @@ import Home from '../screens/Home';
 import AnimatedFlatList from '../screens/Animations/AnimatedFlatList';
 import SlidingCounterAnimation from '../screens/Animations/SlidingCounterAnimation';
 import FlipCardAnimation from '../screens/Animations/FlipCardAnimation';
+import LottieAnimation from '../screens/Animations/LottieAnimation';
+import CircularCarousel from '../screens/Animations/CircularCarousel';
+import OnboardingScreen from '../screens/Animations/OnboardingScreen';
+import ReactNativeAnimation from '../screens/Animations/ReactNativeAnimation';
+import SplashAnimation from '../screens/Animations/SplashAnimation';
+import SplitAnimation from '../screens/Animations/SplitAnimation';
+import AnimatedSearch from '../screens/Animations/AnimatedSearch';
+import SwipeAnimation from '../screens/Animations/SwipeAnimation';
 
 const RootAnimation = () => {
   const Stack = createStackNavigator();
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName="FlipCardAnimation"
+        // initialRouteName="SplashAnimation"
+        initialRouteName="SwipeAnimation"
         screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Animation2" component={Animation2} />
@@ -60,6 +69,36 @@ const RootAnimation = () => {
           component={SlidingCounterAnimation}
         />
         <Stack.Screen name="FlipCardAnimation" component={FlipCardAnimation} />
+        <Stack.Screen name="LottieAnimation" component={LottieAnimation} />
+        <Stack.Screen name="CircularCarousel" component={CircularCarousel} />
+        <Stack.Screen name="OnboardingScreen" component={OnboardingScreen} />
+        <Stack.Screen
+          name="ReactNativeAnimation"
+          component={ReactNativeAnimation}
+        />
+        <Stack.Screen
+          name="SplashAnimation"
+          component={SplashAnimation}
+          // options={{
+          //   cardStyleInterpolator: ({current, layouts}) => {
+          //     return {
+          //       cardStyle: {
+          //         transform: [
+          //           {
+          //             translateX: current.progress.interpolate({
+          //               inputRange: [0, 1],
+          //               outputRange: [-layouts.screen.width, 0],
+          //             }),
+          //           },
+          //         ],
+          //       },
+          //     };
+          //   },
+          // }}
+        />
+        <Stack.Screen name="SplitAnimation" component={SplitAnimation} />
+        <Stack.Screen name="AnimatedSearch" component={AnimatedSearch} />
+        <Stack.Screen name="SwipeAnimation" component={SwipeAnimation} />
       </Stack.Navigator>
     </NavigationContainer>
   );

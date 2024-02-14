@@ -24,7 +24,7 @@ const FlipCardAnimation = () => {
     return {
       transform: [
         {
-          rotateY: withTiming(`${spinValue}deg`),
+          rotateY: withTiming(`${spinValue}deg`, {duration: 500}),
         },
       ],
     };
@@ -34,7 +34,7 @@ const FlipCardAnimation = () => {
     return {
       transform: [
         {
-          rotateY: withTiming(`${spinValue}deg`),
+          rotateY: withTiming(`${spinValue}deg`, {duration: 500}),
         },
       ],
     };

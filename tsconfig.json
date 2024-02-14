@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "commonjs",
+      "jsx": "react",
+      "noEmit": true,
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "baseUrl": "./",
+      "preserveSymlinks": false,
+      "paths": {
+        "*": ["src/*"]
+      }
+    }
+  }
+  
